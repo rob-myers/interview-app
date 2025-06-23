@@ -23,9 +23,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Examples
 
 ```sh
-curl --silent localhost:3001/api/test | jq
-# outputs:
-{
-  "foo": "bar"
-}
+curl --silent localhost:3001/api/test?foo=bar | jq
 ```
+
