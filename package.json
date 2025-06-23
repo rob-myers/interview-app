@@ -6,12 +6,15 @@
     "dev": "next dev --turbopack -p 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "types": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@tanstack/react-query": "^5.81.2",
     "@tanstack/react-query-devtools": "^5.81.2",
+    "classnames": "^2.5.1",
+    "embla-carousel-react": "^8.6.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
