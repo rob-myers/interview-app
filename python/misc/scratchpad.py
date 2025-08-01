@@ -60,13 +60,13 @@ if __name__ == '__main__':
 # ---
 
 class MyDog:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
 
     def show_name(self):
         print("My dog's name is ", self.name)
 
-    def calculate_force(self, mass, acc):
+    def calculate_force(self, mass: int, acc: int) -> int:
         force = mass * acc
         return force
 

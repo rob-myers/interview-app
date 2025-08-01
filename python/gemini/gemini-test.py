@@ -1,6 +1,8 @@
-# pip3 install google-genai
+# pyright: reportUnknownMemberType=false
+
+# # pip3 install google-genai
 #
-# cd python/gemini-test
+# cd python/gemini
 # python3 gemini-test.py
 
 import os
@@ -14,7 +16,7 @@ client = genai.Client()
 
 response = client.models.generate_content(
   model='gemini-2.5-flash',
-  contents='Explain how AI works in a few words, please'
+  contents='Explain how AI works in a few words, please',
 )
 
 print(response.text)
