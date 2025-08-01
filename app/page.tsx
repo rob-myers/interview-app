@@ -3,16 +3,18 @@
 import React from 'react';
 import { css } from "@emotion/react";
 import DemoComponent from '@/components/DemoComponent';
-import CoramInterview from './coram-interview';
+// import CoramInterview from './coram-interview';
+import MetaviewInterview from './metaview-interview';
 
 export default function Home() {
 
   return (
     <div css={homeCss}>
-      Hello, world!
+      {/* Hello, world!! */}
+      <DemoComponent />
 
-      {/* <DemoComponent /> */}
-      <CoramInterview />
+      {/* <CoramInterview /> */}
+      <MetaviewInterview />
     </div>
   );
 }
