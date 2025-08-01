@@ -1,3 +1,5 @@
+## Getting started with requests
+
 ```py
 # pip3 install requests
 import requests
@@ -20,8 +22,9 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:g
 
 ```sh
 cd ~/coding/interview-app/python
-python3 -m venv smt-tutorial
-source smt-tutorial/bin/activate
+
+python3 -m venv .venv/smt-tutorial
+source .venv/smt-tutorial/bin/activate
 
 # later
 deactivate
