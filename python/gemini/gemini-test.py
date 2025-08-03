@@ -1,5 +1,7 @@
 # pyright: reportUnknownMemberType=false
 
+# https://aistudio.google.com/apikey
+
 # # pip3 install google-genai
 #
 # cd python/gemini
