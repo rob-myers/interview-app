@@ -20,3 +20,15 @@ unsorted_chars = list('asdbiobdas')
 sorted_chars = sorted(unsorted_chars)
 reversed_unsorted_chars = reversed(unsorted_chars)
 print('reverse sorted:', unsorted_chars, reversed_unsorted_chars)
+
+import random
+import math
+random_tries=10
+inf_random_tries = min(map(lambda x: random.random(), range(random_tries)))
+sup_random_tries = max(map(lambda x: random.random(), range(random_tries)))
+sum_random_tries = sum(map(lambda x: random.random(), range(random_tries)))
+mul_random_tries = math.prod(map(lambda x: 1 + random.random(), range(random_tries)))
+print(f'largest/least random ({random_tries} tries)', sup_random_tries, inf_random_tries)
+print(f'sum of [0, 1]-valued random variables ({random_tries})', sum_random_tries)
+print(f'product of [1, 2]-valued random variables ({random_tries})', mul_random_tries)
+
