@@ -32,3 +32,17 @@ print(f'largest/least random ({random_tries} tries)', sup_random_tries, inf_rand
 print(f'sum of [0, 1]-valued random variables ({random_tries})', sum_random_tries)
 print(f'product of [1, 2]-valued random variables ({random_tries})', mul_random_tries)
 
+diagonal_relation = [[x,x] for x in range(10) ]
+print('diagonal_relation', diagonal_relation)
+# mixture of positional and named args
+sorted_by_second = sorted([[x, 10 - x] for x in range(10)], key=lambda x: x[1])
+sorted_by_both = sorted([[4, 1], [7, 1], [7, 0], [49, 1]], key=lambda x: [x[0], x[1]])
+print('sorted_by_second', sorted_by_second, '\nsorted_by_both', sorted_by_both)
+
+###
+
+# example generator
+def foo(c: int): 
+  while True:
+    yield c
+    c += 1
