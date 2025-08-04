@@ -61,7 +61,37 @@ print('removed_42_from_list', some_random_numbers)
 some_random_numbers.clear()
 print('cleared_list', some_random_numbers)
 
-# Dictionary 🚧
+# Dictionary
+
+import collections
+ages_dict = { 'rob': 42, 'will': 50, 'kate': 52 }
+
+view_ages_keys = ages_dict.keys()
+view_ages_values = ages_dict.values()
+view_ages_items = ages_dict.items()
+
+ages_dict.get('june')
+ages_dict.get('june', 100)
+ages_dict.setdefault('june', 100) # strict complains if 2nd omitted
+ages_dict.pop('june')
+print(f'ages: keys {ages_dict.keys()}, values {ages_dict.values()}, items {ages_dict.items()}')
+a_default_dict: dict[int, int] = collections.defaultdict(lambda: 42)
+a_default_dict[0] = 1
+print('a_default_dict default value', a_default_dict[1])
+
+dict_from_key_values = dict(zip(range(5), range(5)))
+dict_from_keys = dict.fromkeys(range(5), 42)
+
+ages_dict.update({ 'rob': -1 })
+print('merged_ages_dict', ages_dict)
+ages_dict.pop("rob")
+ages_dict.update({ "rob": 42, "faris": 41, "nick": 41, "lewis": 42 })
+# 🔔
+print('keys_with_value_42', [k for k, v in ages_dict.items() if v == 42])
+print('a_filtered_dict', {k: v for k, v in ages_dict.items() if v == 42})
+
+# Counter 🚧
+
 
 ###
 
